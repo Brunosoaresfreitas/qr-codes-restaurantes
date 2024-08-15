@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes dos Restaurantes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundo_restaurante_japones.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .restaurant {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .restaurant h2 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+            color: #ffcc00;
+        }
+        .restaurant p {
+            margin-bottom: 15px;
+            font-size: 1em;
+            color: #ddd;
+        }
+        .restaurant img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            border: 2px solid #ffcc00;
+        }
+        .menu-button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .menu-button:hover {
+            background-color: #ffdd44;
+        }
+        .back-button {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #ffdd44;
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Codes dos Restaurantes</h1>
+
+    <div class="restaurant">
+        <h2>El Mare</h2>
+        <p>Restaurante especializado em frutos do mar, oferecendo uma experiência única com pratos frescos e sofisticados.</p>
+        <a href="https://www.instagram.com/elmarerestaurante/" target="_blank">
+            <img src="el_mare_qr.png" alt="QR Code para El Mare">
+        </a>
+        <a href="https://ncommerce-customer.vercel.app/menu/el-mare/7" class="menu-button" target="_blank">Acesse o Cardápio</a>
+    </div>
+
+    <div class="restaurant">
+        <h2>Kenkyo Cozinha Oriental</h2>
+        <p>Somos um restaurante focado em te proporcionar a melhor experiência, na culinária japonesa. Desde o atendimento no hall de entrada até os pratos que chegam a sua mesa, tudo é avaliado e estudado para te proporcionar a melhor experiência!</p>
+        <a href="https://www.instagram.com/kenkyocozinha.oriental/" target="_blank">
+            <img src="kenkyo_qr.png" alt="QR Code para Kenkyo">
+        </a>
+        <a href="https://livemenu.app/menu/64da3158f4cca00054b91d95" class="menu-button" target="_blank">Acesse o Cardápio</a>
+    </div>
+
+    <div class="restaurant">
+        <h2>L'Entrecôte de Paris</h2>
+        <p>Sinta o sabor de Paris em cada pedacinho do nosso delicioso entrecôte e surpreenda-se com a suculência do corte, crocância das batatas fritas e o sabor incomparável do nosso molho que, apesar de ser uma receita secreta, todos já sabem: é maravilhoso!</p>
+        <a href="https://www.instagram.com/lentrecotedeparisanapolis/" target="_blank">
+            <img src="le_entrecot_qr.png" alt="QR Code para Le Entrecot">
+        </a>
+        <a href="https://lentrecotedeparis.com.br/cardapio" class="menu-button" target="_blank">Acesse o Cardápio</a>
+    </div>
+
+    <div class="restaurant">
+        <h2>Coco Bambu</h2>
+        <p>Conhecido por seus pratos generosos, o Coco Bambu é referência em frutos do mar e pratos regionais.</p>
+        <a href="https://www.instagram.com/cocobambuanapolis/" target="_blank">
+            <img src="coco_bambu_qr.png" alt="QR Code para Coco Bambu">
+        </a>
+        <a href="https://livemenu.app/menu/62d165b192c3220012844278" class="menu-button" target="_blank">Acesse o Cardápio</a>
+    </div>
+
+    <div class="restaurant">
+        <h2>Bento Restaurante</h2>
+        <p>A partir da criação do Bento, um novo conceito em alta gastronomia é introduzido na cidade. Ele traduz a proposta de Bar e Restaurante, que o torna completo ao proporcionar experiências gastronômicas e inesquecíveis sabores.</p>
+        <a href="https://www.instagram.com/restaurantebento/" target="_blank">
+            <img src="bento_restaurante_qr.png" alt="QR Code para Bento Restaurante">
+        </a>
+        <a href="https://drive.google.com/file/d/1PlFwi2b7PDY2GwYCtQooIz4s1ZCDRY5S/view" class="menu-button" target="_blank">Acesse o Cardápio</a>
+    </div>
+
+    <a href="index.html" class="back-button">Voltar à Página Principal</a>
+</body>
+</html>

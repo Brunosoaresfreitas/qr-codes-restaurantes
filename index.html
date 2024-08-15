@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vinda, Nicolly!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('fotonossa.jfif'); /* Use o nome da sua imagem aqui */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .instructions {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            text-align: left;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .instructions h2 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+        .instructions ol {
+            margin: 0;
+            padding-left: 20px;
+            color: #ddd;
+        }
+        .instructions ol li {
+            margin-bottom: 10px;
+        }
+        .love-message {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #ffcc00;
+        }
+        .quiz {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .quiz p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .quiz button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #ffcc00;
+            color: #000;
+            transition: background-color 0.3s;
+        }
+        .quiz button:hover {
+            background-color: #ffdd44;
+        }
+    </style>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === '18') {
+                window.location.href = 'restaurantes.html';
+            } else {
+                alert('Resposta errada! Tente novamente.');
+                window.location.href = 'erro.html'; // Página de erro
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Meu anjo, Nicolly!</h1>
+    <p>Seja muito bem-vinda à página onde se decidirá o local para a celebração do aniversário da pessoa mais incrível deste mundo. Espero que aprecie as opções apresentadas e que escolha com carinho aquela que mais lhe encantar.</p>
+
+    <div class="instructions">
+        <h2>Regras para a Escolha:</h2>
+        <ol>
+            <li>Haverá um selo de QR code e um botão destinado ao acesso ao cardápio digital de cada estabelecimento. Deverás, primeiramente, acionar o QR code do restaurante a fim de examinar o perfil do Instagram e suas publicações, para assim discernir se as comidas ali apresentadas despertarão teu apetite.</li>
+            <li>Uma vez avaliado o Instagram da referida página, deves proceder à abertura do cardápio digital e realizar uma minuciosa análise de todas as iguarias ali ofertadas.</li>
+            <li>Após concluíres a análise de todas as páginas e cardápios digitais, deverás prontamente informar ao nobre príncipe, que se encontra a teu lado, acerca do local por ti escolhido.</li>
+        </ol>
+    </div>
+
+    <p class="love-message">Espero que goste! Eu te amo minha princesa.</p>
+
+    <div class="quiz">
+        <p>Agora, para ter o privilégio de participar dessa escolha, você deverá acertar a seguinte pergunta:</p>
+        <p><strong>Qual o dia do nosso primeiro beijo (Lembrando que foi em fevereiro)?</strong></p>
+        <button onclick="checkAnswer('15')">Dia 15</button>
+        <button onclick="checkAnswer('20')">Dia 20</button>
+        <button onclick="checkAnswer('18')">Dia 18</button>
+    </div>
+</body>
+</html>
